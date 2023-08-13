@@ -37,13 +37,9 @@ const fullNameInput = document.getElementById("fullName");
           });
 
           continueButton.addEventListener("click", function() {
-            
+           window.location.href = "payment.html"; 
 
-            if (!fullName || !phoneNumber || !email || !confirmEmail || !gender) {
-            alert("Please fill out all the required fields");
-          }else{
-            window.location.href = "payment.html";
-          }
+            
 
 
           var full_name = document.getElementById("fullName").value;
