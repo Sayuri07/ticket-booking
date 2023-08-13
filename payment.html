@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./payment.css" type="text/css">
+</head>
+<body>
+    <nav>
+    <header>
+        <h1>Payment Gateway</h1>
+    </header>
+    <ul class="nav-links">
+        <li><a class="active" href="./home.html">Home</a></li>
+        <li><a class="active" href="./ticket.html">Ticket</a></li>
+        <li><a class="active" href="./details.html">Details</a></li>
+        </ul> 
+</nav>
+
+<div class="mainsection">
+    <div class="section1">
+        <form id="userForm">
+            <p>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" required></p>
+    
+            <p>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" required></p>
+    
+            <p>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required></p>
+    
+            <p>
+            <label for="nameOnCard">Name on Card:</label>
+            <input type="text" id="nameOnCard" required></p>
+        </form> 
+    </div>
+    
+        <div class="section2">
+            <table id="summaryTable">
+                
+                <tr>
+                    <td>Date</td>
+                    <td id="Date"></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td id="Time"></td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td id="Duration"></td>
+                </tr>
+                <tr>
+                    <td>Foreign Adult</td>
+                    <td id="fAdult"></td>
+                </tr>
+                <tr>
+                    <td>Foreign Child</td>
+                    <td id="fChild"></td>
+                </tr>
+                <tr>
+                    <td>SL Adult</td>
+                    <td id="sAdult"></td>
+                </tr>
+                <tr>
+                    <td>SL Child</td>
+                    <td id="sChild"></td>
+                </tr>
+                <tr>
+                    <td>Infant</td>
+                    <td id="tinfant"></td>
+                </tr>
+                <tr>
+                    <td>Tickets Cost</td>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td id="summaryFullName"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="summaryEmail"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td id="summaryPhoneNumber"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td id="summaryAddress"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="summaryGender"></td>
+                </tr>
+                <tr>
+                    <td>Card Number</td>
+                    <td id="summaryCardNumber"></td>
+                </tr>
+                <tr>
+                    <td>Expiry Date</td>
+                    <td id="summaryExpiryDate"></td>
+                </tr>
+                <tr>
+                    <td>CVV</td>
+                    <td id="summaryCVV"></td>
+                </tr>
+                <tr>
+                    <td>Name on Card</td>
+                    <td id="summaryNameOnCard"></td>
+                </tr>
+            </table>
+        </div>
+</div>
+
+    
+    <button id="continueButton">Pay Now</button>
+
+    <script src="./payment.js"></script>
+</body>
+</html>
